@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Divya colors</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+      html {
+        scroll-behavior: smooth; 
+        overflow-x: hidden;
+      }
+
+    </style>
+  </head>
+  <body class="text-gray-800 font-sans">
+
+  <!-- Navbar -->
+<nav class="bg-white/80 backdrop-blur shadow-md sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-3xl font-bold text-indigo-600 tracking-tight">Divya colors</h1>
+    
+    <!-- Hamburger Icon -->
+    <div class="md:hidden">
+      <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex gap-6 font-medium text-gray-700">
+      <li><a href="#about" class="hover:text-indigo-500 transition duration-200">About</a></li>
+      <li><a href="#partners" class="hover:text-indigo-500 transition duration-200">Our Customers</a></li>
+      <li><a href="#contact" class="hover:text-indigo-500 transition duration-200">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden px-6 pb-4">
+    <ul class="flex flex-col gap-4 font-medium text-gray-700 bg-white rounded-md shadow-md p-4">
+      <li><a href="#about" class="hover:text-indigo-500 transition duration-200">About</a></li>
+      <li><a href="#partners" class="hover:text-indigo-500 transition duration-200">Our Customers</a></li>
+      <li><a href="#contact" class="hover:text-indigo-500 transition duration-200">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- Hero Section -->
+<section class="py-20 px-6 bg-cover bg-center relative" style="background-image: url('./space-dye.webp');" data-aos="fade-up">
+  <div class="absolute inset-0 bg-black/50 z-0"></div> <!-- Dark overlay -->
+  <div class="relative max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 z-10">
+    <div class="md:w-1/2 text-center md:text-left">
+      <h2 class="text-5xl font-extrabold text-white leading-tight mb-4">Bringing Vibrance to Life</h2>
+      <p class="text-lg text-white mb-6">Divya Colors, based in Panipat, Haryana, provides top-quality dyeing chemical supplies that power India&apos;s textile industry with vibrant excellence.</p>
+      <a href="#contact" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded-full shadow-md transition">Get in Touch</a>
+    </div>
+    <div class="md:w-1/2 flex flex-col justify-center items-center">
+      <img src="./DC.png" alt="Dye Colors" class="rounded-xl shadow-xl w-1/2 max-h-[400px] object-cover"/>
+      <p class="text-center text-white text-3xl font-extrabold">Make the whole Word Colorful</p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 bg-white" data-aos="fade-right">
+      <div class="max-w-5xl mx-auto text-center">
+        <h3 class="text-4xl font-bold text-indigo-600 mb-6">About Us</h3>
+        <p class="text-gray-700 text-lg leading-relaxed">
+          Founded in Panipat, Haryana, <span class="font-semibold text-indigo-700">Divya colors</span> has been serving the textile industry with premium dyeing chemicals. We believe in adding not just color to fabric but life to every thread. Our commitment to quality, sustainability, and innovation makes us a trusted name across the industry.
+        </p>
+      </div>
+    </section>
+
+<!-- Our Partners Section -->
+<section id="partners" class="py-20 px-6 bg-gradient-to-r from-indigo-50 to-purple-100" data-aos="zoom-in">
+  <div class="max-w-6xl mx-auto text-center">
+    <h3 class="text-4xl font-bold text-indigo-700 mb-10">Our Customers</h3>
+    <div class="flex flex-wrap justify-center gap-12">
+      
+      <!-- Partner 1 -->
+      <div class="flex flex-col items-center">
+        <img src="http://vishnucarpet.com/wp-content/uploads/2014/05/48favicon1.png" class="h-16 grayscale hover:grayscale-0 transition" alt="Vishnu Carpet" />
+        <p class="mt-2 text-sm font-medium text-gray-700">Vishnu Carpet</p>
+      </div>
+
+      <!-- Partner 2 -->
+      <div class="flex flex-col items-center">
+        <img src="https://th.bing.com/th/id/ODLS.d65821d3-3d8b-4473-b253-a5797d46b265?w=32&h=32&qlt=90&pcl=fffffc&o=6&cb=ircwebp1&pid=1.2" class="h-16 grayscale hover:grayscale-0 transition" alt="Design Tex" />
+        <p class="mt-2 text-sm font-medium text-gray-700">Design Tex</p>
+      </div>
+
+      <!-- Partner 3 -->
+      <div class="flex flex-col items-center">
+        <img src="https://th.bing.com/th/id/ODLS.050edc44-147d-4dfe-b042-7f6ccffa11e4?w=32&h=32&qlt=90&pcl=fffffc&o=6&cb=ircwebp1&pid=1.2" class="h-16 grayscale hover:grayscale-0 transition" alt="Gokal Exports" />
+        <p class="mt-2 text-sm font-medium text-gray-700">Gokal Exports</p>
+      </div>
+
+      <!-- Partner 4 -->
+      <div class="flex flex-col items-center">
+        <img src="./ms.png" class="h-16 grayscale hover:grayscale-0 transition" alt="Madaan Overseas" />
+        <p class="mt-2 text-sm font-medium text-gray-700">Madaan Overseas</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 px-6 bg-cover bg-center relative" style="background-image: url('./yarn.jpg');" data-aos="fade-left">
+  <div class="absolute inset-0 bg-black/40 z-0"></div> <!-- Dark overlay -->
+  <div class="relative max-w-4xl mx-auto text-center z-10">
+    <h3 class="text-4xl font-bold text-white mb-6">Contact Us</h3>
+    <p class="mb-8 text-white">Have questions or want to partner with us? Reach out — we&apos;re just a message away.</p>
+    <form onsubmit="sendWhatsAppMessage(event)" class="bg-white/80 p-8 rounded-xl shadow-lg max-w-xl mx-auto text-left space-y-6 backdrop-blur">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <input id="name" type="text" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-300" required>
+        <input id="email" type="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-300" required>
+      </div>
+      <textarea id="message" placeholder="Your Message" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-300" rows="5" required></textarea>
+      <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 rounded-md transition">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="bg-indigo-900 text-white py-6 text-center">
+      <p class="text-sm">&copy; 2025 Divya colors | Panipat, Haryana | All Rights Reserved</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      function sendWhatsAppMessage(event) {
+        event.preventDefault();
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+        const phoneNumber = "918168080844"; // ✅ Replace with your WhatsApp number (with country code, no +)
+        const text = `Hi, I'm ${name} , my email is "${email}" , I wanted to say that : ${message}`;
+        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
+
+    window.open(url, "_blank");
+  }
+        const toggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("mobile-menu");
+
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+
+  document.addEventListener("click", (e) => {
+    if (
+      !menu.contains(e.target) &&
+      !toggle.contains(e.target)
+    ) {
+      menu.classList.add("hidden");
+    }
+  });
+</script>
+
+  <script>AOS.init({ duration: 500 });</script>
+  </body>
+</html>
