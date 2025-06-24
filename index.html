@@ -84,7 +84,7 @@
       
       <!-- Partner 1 -->
       <div class="flex flex-col items-center">
-        <img src="http://vishnucarpet.com/wp-content/uploads/2014/05/48favicon1.png" class="h-16 grayscale hover:grayscale-0 transition" alt="Vishnu Carpet" />
+        <img src="./vishnuCarpet.png" class="h-16 grayscale hover:grayscale-0 transition" alt="Vishnu Carpet" />
         <p class="mt-2 text-sm font-medium text-gray-700">Vishnu Carpet</p>
       </div>
 
@@ -142,7 +142,7 @@
         const email = document.getElementById('email').value.trim();
         const message = document.getElementById('message').value.trim();
         const phoneNumber = "918168080844"; // ✅ Replace with your WhatsApp number (with country code, no +)
-        const text = `Hi, I'm ${name} , my email is "${email}" , I wanted to say that : ${message}`;
+        const text = `Hi, I am ${name} , my email is "${email}" , I wanted to say that : ${message}`;
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
 
     window.open(url, "_blank");
